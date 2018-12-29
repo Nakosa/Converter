@@ -7,7 +7,7 @@ from StyleFrame import StyleFrame
 from pprint import pprint
 
 PERCENTAGE_GETT = 0.177
-PARK_PERCENTAGE_GETT = 0.033
+PARK_PERCENTAGE_GETT = 0.045
 
 COLLS_NAME = {
     'name': 'Имя',

@@ -1,15 +1,14 @@
 """GUI for converter script."""
-import tkinter as tk
-from tkinter import filedialog
-
-from convert import convert_gett, convert_uber
+try:
+    import _tkinter
+    import tkinter as tk
+    from tkinter import filedialog
+    from convert import convert_gett, convert_uber
+except Exception as e:
+    print('ERROR:')
+    print(e)
 
 def __main():
-    try:
-        import os
-        os.system('cls')
-    except:
-        pass
     root = tk.Tk()
     root.withdraw()
     while True:
@@ -30,3 +29,4 @@ def __main():
 
 if __name__ == "__main__":
     __main()
+    input()

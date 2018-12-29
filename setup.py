@@ -98,13 +98,17 @@ for dll in glob(os.path.join(dll_dir, "tcl*.dll")):
 for dll in glob(os.path.join(dll_dir, "tk*.dll")):
     build_exe_options["include_files"].append(dll)
 
+
 # GUI applications require a different base on Windows (the default is for a
 # console application).
 # base = "Win32GUI"
+
+#build_exe_options = {"packages": ["os"], "excludes": ["tkinter"]}
+
 base = None
 
 setup(name="ui",
       version="0.1",
       description="",
       options={"build_exe": build_exe_options},
-      executables=[Executable("F:/Job/7_converter/gett/gett-converter/ui.py")])
+      executables=[Executable("J:/Job/GetConverter/ui.py", base = base)])
